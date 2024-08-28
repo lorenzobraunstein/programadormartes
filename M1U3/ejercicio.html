@@ -10,49 +10,79 @@
 
 <body>
     <!-- h1 utilizado aca -->
-    <h1>Lorenzo Braunstein</h1>
-    <img src="imagen1.jpg" alt="cachorro golden">
-    <h2>Edad</h2>
-    <p>19</p>
-    <h3>
-        Domicilio
-    </h3>
-    <p>
-        Marcelo Torcuato de Alvear 2567
-    </p>
-    <h4>
-        Que series me gustan?
-    </h4>
-    <ul>
-        <li>Dark</li>
-        <li>The Boys</li>
-        <li>Outer Banks</li>
-        <li>Skins</li>
-    </ul>
-    <h4>Mis peliculas favoritas</h4>
-    <ol>
-        <li>Interestelar</li>
-        <li>Fight club</li>
-        <li>Scarface</li>
-    </ol>
-    <p>Me gustan mucho las peliculas animadas de Disney tambien</p>
-    <ol>
-        <li>Zootopia</li>
-        <li>Moana</li>
-        <li>Soul</li>
-    </ol>
-    <h4>Perfil</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Corrupti totam fuga explicabo, impedit earum sapiente nostrum.
-        Facere deleniti recusandae unde tempore ratione perferendis, quibusdam
-        atque ipsa dolore commodi amet nostrum?</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Doloremque laudantium molestias similique porro voluptate saepe, aliquid, doloribus
-        repudiandae voluptates blanditiis delectus veritatis aut corporis amet architecto. Doloribus minus delectus
-        odit.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Quidem voluptatem autem architecto quos reiciendis dolor culpa molestias omnis
-        est aliquid sequi nam modi pariatur nobis deserunt hic ipsa, enim quo?</p>
+    <div class="contenedor">
+        <div class="divh1">
+            <h1>Lorenzo Braunstein</h1>
+        </div>
+        <div>
+            <img class="imagen" src="imagen1 - copia.jpg" width="130" alt="cachorro golden">
+        </div>
+    </div>
+
+    <div class="edadcontenedor">
+        <div>
+            <h3>Edad</h3>
+            <p>19</p>
+        </div>
+    </div>
+    <div class="domcontenedor">
+        <h3>
+            Domicilio
+        </h3>
+        <div>
+            <p>
+                Marcelo Torcuato de Alvear 2567
+            </p>
+        </div>
+    </div>
+
+    <div class="series">
+        <h4>
+            Que series me gustan?
+        </h4>
+    </div>
+    <div class="sinorden">
+        <ul>
+            <li>Dark</li>
+            <li>The Boys</li>
+            <li>Outer Banks</li>
+            <li>Skins</li>
+        </ul>
+    </div>
+    <div class="peliculas">
+        <h4>Mis peliculas favoritas</h4>
+    </div>
+    <div class="conorden1">
+        <ol>
+            <li>Interestelar</li>
+            <li>Fight club</li>
+            <li>Scarface</li>
+        </ol>
+    </div>
+
+    <h4 class="animadas">Animadas</h4>
+    <div class="conorden2">
+        <ol>
+            <li>Zootopia</li>
+            <li>Moana</li>
+            <li>Soul</li>
+        </ol>
+    </div>
+    <h4 class="blue"">Perfil</h4>
+    <div class="text">     
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Corrupti totam fuga explicabo, impedit <span class="blue">earum</span> sapiente nostrum.
+            Facere deleniti recusandae unde tempore ratione perferendis, quibusdam
+            atque ipsa dolore commodi amet nostrum?</p>
+        <p>Lorem ipsum <span class="blue">dolor</span> sit, amet consectetur adipisicing elit.
+            Doloremque laudantium molestias similique porro voluptate saepe, aliquid, doloribus
+            repudiandae voluptates blanditiis delectus veritatis aut corporis amet architecto. Doloribus minus delectus
+            odit.</p>
+        <p>Lorem ipsum, dolor sit <span class="blue">amet</span> consectetur adipisicing elit.
+            Quidem voluptatem autem architecto quos reiciendis <span class="blue">dolor</span> culpa molestias omnis
+            est aliquid sequi nam modi pariatur nobis deserunt hic ipsa, enim quo?</p>
+    </div>
+
 </body>
 
 </html>
