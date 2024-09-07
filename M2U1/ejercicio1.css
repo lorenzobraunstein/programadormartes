@@ -1,0 +1,20 @@
+.square1{
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+.square2{
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}.square3{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+.contenedor{
+    display: flex;
+}

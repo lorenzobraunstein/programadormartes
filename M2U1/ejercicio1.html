@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 1</title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div>
+            <h2 class="square1" onclick="cambiarFondo('red')">square one</h2>
+        </div>
+        <div>
+            <h2 class="square2" onclick="cambiarFondo('green')">square two</h2>
+        </div>
+        <div>
+            <h2 class="square3" onclick="cambiarFondo('blue')">square three</h2>
+        </div>
+    </div>
+    <script>
+        function cambiarFondo(color) {
+            document.querySelector('body').style.background = color;
+        }
+    </script>
+</body>
+</html>
