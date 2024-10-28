@@ -24,16 +24,10 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Reservas</a>
-                        </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href="#">Contacto</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Vehículos
+                                Reservas
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -43,6 +37,18 @@
                                 </li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vehiculos">Vehiculos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonios">Testimonios</a>
+                        </li>
+                        <li class="nav-item"></li>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -64,7 +70,7 @@
         <h2 class="servicios">SERVICIOS</h2>
     </div>
 
-    <div>
+    <div id="servicios" class="scroll_section">
         <div class="row row-cols-1 row-cols-md-2 g-3 contacto-class">
             <div class="col">
                 <div class="card text-bg-dark">
@@ -114,7 +120,7 @@
         <h2>VEHICULOS</h2>
     </div>
 
-    <div>
+    <div id="vehiculos" class="scroll_section">
         <div class="row row-cols-1 row-cols-md-3 g-4 autosclass">
             <div class="col">
                 <div class="card text-bg-dark">
@@ -158,61 +164,61 @@
     <div class="servicios">
         <h2>TESTIMONIOS</h2>
     </div>
-<div class="container-fluid py-5" style="background-color: darkgrey;">
-    <h2 class="text-center mb-4 ">Lo que dicen nuestros clientes</h2>
-    <div id="testimoniosCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner"> 
-        <div class="carousel-item active">
-          <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-              <img src="https://fakeimg.pl/400x400" class="rounded-circle mb-3" alt="Cliente 1" width="100" height="100">
-              <p class="lead">"El servicio fue excelente. Los autos están en perfectas condiciones y el proceso de alquiler fue muy fácil. ¡Recomiendo Rent a Car a todos mis amigos!"</p>
-              <h5>- Juan Pérez</h5>
+    <div id="testimonios" class="container-fluid py-5 scroll_section" style="background-color: darkgrey;">
+        <div id="testimoniosCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <img src="https://fakeimg.pl/400x400" class="rounded-circle mb-3" alt="Cliente 1"
+                                width="100" height="100">
+                            <p class="lead">"El servicio fue excelente. Los autos están en perfectas condiciones y el
+                                proceso de alquiler fue muy fácil. ¡Recomiendo Rent a Car a todos mis amigos!"</p>
+                            <h5>- Juan Pérez</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <img src="https://fakeimg.pl/400x400" class="rounded-circle mb-3" alt="Cliente 2"
+                                width="100" height="100">
+                            <p class="lead">"Alquilar un coche aquí fue la mejor decisión. Excelente atención al cliente
+                                y vehículos impecables. Sin duda volveré a utilizar sus servicios."</p>
+                            <h5>- María Gómez</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <img src="https://fakeimg.pl/400x400" class="rounded-circle mb-3" alt="Cliente 3"
+                                width="100" height="100">
+                            <p class="lead">"Muy satisfecho con mi experiencia. Todo fue rápido, sencillo y a un precio
+                                muy razonable. ¡Gracias por el excelente servicio!"</p>
+                            <h5>- Carlos Martínez</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
-        <div class="carousel-item">
-          <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-              <img src="https://fakeimg.pl/400x400" class="rounded-circle mb-3" alt="Cliente 2" width="100" height="100">
-              <p class="lead">"Alquilar un coche aquí fue la mejor decisión. Excelente atención al cliente y vehículos impecables. Sin duda volveré a utilizar sus servicios."</p>
-              <h5>- María Gómez</h5>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-              <img src="https://fakeimg.pl/400x400" class="rounded-circle mb-3" alt="Cliente 3" width="100" height="100">
-              <p class="lead">"Muy satisfecho con mi experiencia. Todo fue rápido, sencillo y a un precio muy razonable. ¡Gracias por el excelente servicio!"</p>
-              <h5>- Carlos Martínez</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
     </div>
-  </div>
-  
-
-
-
-
-
-
 
     <div class="servicios">
         <H2>CONTACTO</H2>
     </div>
 
-    <section id="contacto" class="py-5" style="background-color: darkgrey;">
+    <section id="contacto" class="py-5 scroll_section" style="background-color: darkgrey;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -253,10 +259,6 @@
             </div>
         </div>
     </section>
-
-    <div class="servicios">
-        <h2>FORMULARIO</h2>
-    </div>
 
 
 
