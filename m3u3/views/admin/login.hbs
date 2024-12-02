@@ -1,0 +1,25 @@
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4 shadow bg-dark " style="width: 100%; max-width: 400px;">
+            <form action="/admin/login" method="post">
+                <div class="mb-3">
+                    <label for="email" style="color: white;" class="form-label">Email</label>
+                    <input name="usuario" type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" style="color: white;" class="form-label">Password</label>
+                    <input name="password" type="password" class="form-control" id="password" placeholder="Enter your password"
+                        required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Log In</button>
+                </div>
+            </form>
+            {{#if error}}
+            <p>Usuario o contraseña incorrecto!</p>
+            {{/if}}
+        </div>
+    </div>
+</body>
+
+</html>
