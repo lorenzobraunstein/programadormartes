@@ -4,7 +4,7 @@
             <form action="/admin/login" method="post">
                 <div class="mb-3">
                     <label for="email" style="color: white;" class="form-label">Email</label>
-                    <input name="usuario" type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    <input name="usuario" type="text" class="form-control" id="email" placeholder="Enter your email" required>
                 </div>
                 <div class="mb-3">
                     <label for="password" style="color: white;" class="form-label">Password</label>
@@ -16,7 +16,7 @@
                 </div>
             </form>
             {{#if error}}
-            <p>Usuario o contraseña incorrecto!</p>
+            <p style="color: white;" >Usuario o contraseña incorrecto!</p>
             {{/if}}
         </div>
     </div>
