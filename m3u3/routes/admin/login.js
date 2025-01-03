@@ -16,13 +16,13 @@ router.get('/', function(req, res, next) {
         var data = await usuariosModel.getUserAndPass(usuario, password);
 
         if (data != undefined){
-            res.redirect('/');
+            res.redirect('/admin/novedades');
         } else {
             res.render ('admin/login', {
                 layout: 'admin/layout',
                 error: true
             })
-        }``
+        }
     } catch(error) {
         console.log(error)
     }
